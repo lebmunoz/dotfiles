@@ -1,0 +1,16 @@
+[user]
+	email = luis.munoz@bridge.ufsc.br
+	name = Luis Enrique
+
+[alias]
+    fetcheck = "!f() { git fetch $1 $2:$2; git checkout $2; }; f"
+[push]
+	default = current
+[diff]
+	tool = bc3
+[difftool "bc3"]
+	trustExitCode = true
+[merge]
+	tool = bc3
+[mergetool "bc3"]
+	trustExitCode = true
