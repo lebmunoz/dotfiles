@@ -14,5 +14,4 @@ function fish_user_key_bindings
     end
 
 #Use "the-fuck"
-eval (thefuck --alias | tr '\n' ';')
-
+thefuck --alias | source
