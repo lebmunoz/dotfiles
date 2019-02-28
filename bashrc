@@ -130,3 +130,7 @@ eval "$(thefuck --alias)"
 # Autocomplete com alias g:
 source /usr/share/bash-completion/completions/git
 __git_complete g __git_main
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

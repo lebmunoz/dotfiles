@@ -11,6 +11,6 @@
 [difftool "bc3"]
 	trustExitCode = true
 [merge]
-	tool = bc3
+	tool = meld
 [mergetool "bc3"]
 	trustExitCode = true
