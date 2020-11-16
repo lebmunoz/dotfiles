@@ -7,10 +7,12 @@
 [push]
 	default = current
 [diff]
-	tool = bc3
-[difftool "bc3"]
+    tool = kompare
+[difftool "kompare"]
 	trustExitCode = true
 [merge]
 	tool = meld
-[mergetool "bc3"]
+[mergetool "meld"]
 	trustExitCode = true
+[diff]
+	renamelimit=20894

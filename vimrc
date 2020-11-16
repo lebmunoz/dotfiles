@@ -1,4 +1,5 @@
 "vimrc Luis
+set shell=/bin/bash
 "Instalação do Vundle:
 set nocompatible              " be iMproved, required
 filetype off                  " required
@@ -11,7 +12,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'https://github.com/tpope/vim-surround'
-Plugin 'https://github.com/Valloric/YouCompleteMe'
+" Plugin 'https://github.com/Valloric/YouCompleteMe'
 Plugin 'https://github.com/tpope/vim-speeddating'
 Plugin 'https://github.com/airblade/vim-gitgutter'
 Plugin 'vim-airline/vim-airline'
@@ -32,10 +33,10 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 "
 "Usar Python 2.7 para interpretar o ymcd server
-let g:ycm_path_to_python_interpreter = '/usr/bin/python'
+" let g:ycm_path_to_python_interpreter = '/usr/bin/python'
 
 "Default auto-completion for C family
-let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
+" let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
 
 "Set Ctrl-P
 set runtimepath^=~/.vim/bundle/ctrlp.vim

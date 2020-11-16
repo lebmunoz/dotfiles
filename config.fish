@@ -13,6 +13,12 @@ function fish_user_key_bindings
     bind \e. 'history-token-search-backward'
     end
 
+#Use Vim as default visual editor
+set -Ux EDITOR nvim
+
+#Start ssh-agent
+fish_ssh_agent
+
 #Use "the-fuck"
 #thefuck --alias | source
 #
@@ -20,12 +26,12 @@ function fish_user_key_bindings
 set -xU MAVEN_OPTS -Xmx1024M -Xss128M -XX:MaxPermSize=1024M -XX:+CMSClassUnloadingEnabled
 
 #Ruby path
-set -gx PATH /home/luis/.gem/ruby/2.5.0/bin $PATH
+set -gx PATH /home/luis/.gem/ruby/2.7.0/bin $PATH
 
 #Android SDK path
-set -gx ANDROID_SDK_ROOT /home/luis/Android/Sdk
+#set -gx ANDROID_SDK_ROOT /home/luis/Android/Sdk
 
 #Android SDK path
-set -gx PATH /home/luis/Android/Sdk/emulator $PATH
+#set -gx PATH /home/luis/Android/Sdk/emulator $PATH
 
-set -gx PATH /home/luis/Android/Sdk/tools $PATH
+#set -gx PATH /home/luis/Android/Sdk/tools $PATH
